@@ -1,0 +1,27 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#include "include/capi/cef_app_capi.h"
+#include "include/capi/cef_base_capi.h"
+#include "include/capi/cef_client_capi.h"
+#include "include/capi/cef_command_line_capi.h"
+#include "include/capi/cef_crash_util_capi.h"
+#include "include/capi/cef_file_util_capi.h"
+#include "include/capi/cef_origin_whitelist_capi.h"
+#include "include/capi/cef_parser_capi.h"
+#include "include/capi/cef_path_util_capi.h"
+#include "include/capi/cef_request_capi.h"
+#include "include/capi/cef_resource_bundle_capi.h"
+#include "include/capi/cef_response_capi.h"
+#include "include/capi/cef_scheme_capi.h"
+#include "include/capi/cef_ssl_status_capi.h"
+#include "include/capi/cef_thread_capi.h"
+#include "include/capi/cef_trace_capi.h"
+#include "include/capi/cef_urlrequest_capi.h"
+#include "include/capi/cef_waitable_event_capi.h"
+#include "include/capi/cef_x509_certificate_capi.h"
+#include "include/capi/cef_xml_reader_capi.h"
+#include "include/capi/cef_zip_reader_capi.h"
+#include "include/cef_application_mac.h"
+#include "include/capi/cef_server_capi.h"

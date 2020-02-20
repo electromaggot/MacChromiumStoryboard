@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script type="application/javascript">
+
+      function navigateAppToNextScreen() {
+        alert('This is a Javascript Alert.');
+        jsHandler.navigateAppForward(1);
+      }
+
+      function openFile() {
+        jsHandler.openFile('demoIndex.html',9732,true)
+      }
+
+      function saveFile() {
+        jsHandler.saveFile(107123,false,'')
+      }
+      function saveSpecialFile() {
+        jsHandler.saveSpecialFile(107123,false,'')
+      }
+
+      function getAuthenticationData() {
+        return jsHandler.getAuthenticationData()
+      }
+
+      function logout() {
+        jsHandler.logout()
+      }
+
+      function showJS(msg) {
+        alert(msg);
+      }
+
+    </script>
+  </head>
+
+  <body bgcolor="#E6E6FA"  style="background-color:#E6E6FA">
+
+    <h1>Chromium Example User Interface</h1>
+    <h2>(Web UI wrapped in a native macOS Application)<h2>
+    <h3>Demonstrates HTML/Javascript control & interaction with the App</h3>
+
+    Some things you can do from this UI, for example:
+    <ul>
+      <li>
+        If you just simulated a login, <a id="0" href="" onclick="getAuthenticationData()">Get that Authentication Data</a> from the App side (e.g. from Web Service).
+        <br/><br/>
+      </li><li>
+        Make the wrapping App perform an action, for instance <a id="1" href="" onclick="navigateAppToNextScreen()">Go to its Next Screen</a>.
+      </li>
+    </ul>
+
+	Control resources that the app-side has exclusive access to, like the file system...
+    <ul>
+      <li>
+        Click here to open an arbitrary file (e.g. this HTML file) on your local system:
+        <br/>
+        <a id="2" href="" onclick="openFile()">Open this HTML File</a>
+        <br/><br/>
+      </li><li>
+        Simulate the process of uploading a file, by popping-up a File Picker:
+        <br/>
+        <a id="3" href="" onclick="saveFile()">Upload File</a>
+        <br/><br/>
+      </li><li>
+        <a id="4" href="" onclick="saveSpecialFile()">Upload some so-called "Special" File</a>
+      </li>
+    </ul>
+
+    Or simply <a id="5" href="" onclick="logout()">Log Out</a>
+    <br/>
+
+  </body>
+</html>
+
